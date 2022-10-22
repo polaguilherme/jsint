@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+   background-color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#text{
+    text-align: center;
+    box-shadow: 10px 5px 5px lightgrey;
+}
+#luck{
+    text-align: center;
+    margin-top:40px ;
+    color: white;
+    font-weight: 900;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: black;
+    padding: 8px;
+    box-shadow: 10px 5px 5px lightgrey;
+}
+#sort{
+
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 100%;
+    padding: 20px;
+    font-weight: 150px;
+    font-size: 12px;
+    margin-top: 25px;
+}
+#button{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 28%;
+    padding: 17px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: #009c3d;
+    color: white;
+    border: 3px solid white;
+    box-shadow: 10px 5px 5px lightgrey;
+
+}
+#button:hover{
+    animation: bounce 1s;
+}
+@keyframes bounce {
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+.content{
+    display: none;
+    text-align: center;
+}
+.content{
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transform: translate(-50%,-50%);
+    box-shadow: 10px 5px 5px lightgrey;
+}
+@keyframes scale-in {
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100%{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+#close{
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    font-weight: 100;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: #fff;
+    background-color:#009c3d;
+    font-weight: bold;
+    
+}
